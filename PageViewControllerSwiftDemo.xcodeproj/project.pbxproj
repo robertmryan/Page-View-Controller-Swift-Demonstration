@@ -13,6 +13,10 @@
 		839C9A001AAB697C00A66202 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839C99FF1AAB697C00A66202 /* Images.xcassets */; };
 		839C9A031AAB697C00A66202 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839C9A011AAB697C00A66202 /* LaunchScreen.xib */; };
 		839C9A0F1AAB697D00A66202 /* PageViewControllerSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C9A0E1AAB697D00A66202 /* PageViewControllerSwiftDemoTests.swift */; };
+		839C9A191AAB69BC00A66202 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C9A181AAB69BC00A66202 /* AViewController.swift */; };
+		839C9A1B1AAB69C700A66202 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C9A1A1AAB69C700A66202 /* BViewController.swift */; };
+		839C9A1D1AAB69D300A66202 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C9A1C1AAB69D300A66202 /* CViewController.swift */; };
+		839C9A1F1AAB69E400A66202 /* DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C9A1E1AAB69E400A66202 /* DViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 		839C9A081AAB697C00A66202 /* PageViewControllerSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageViewControllerSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839C9A0D1AAB697D00A66202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839C9A0E1AAB697D00A66202 /* PageViewControllerSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControllerSwiftDemoTests.swift; sourceTree = "<group>"; };
+		839C9A181AAB69BC00A66202 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		839C9A1A1AAB69C700A66202 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		839C9A1C1AAB69D300A66202 /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		839C9A1E1AAB69E400A66202 /* DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
+		839C9A201AAB6C1700A66202 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 		839C99EA1AAB697C00A66202 = {
 			isa = PBXGroup;
 			children = (
+				839C9A201AAB6C1700A66202 /* README.md */,
 				839C99F51AAB697C00A66202 /* PageViewControllerSwiftDemo */,
 				839C9A0B1AAB697C00A66202 /* PageViewControllerSwiftDemoTests */,
 				839C99F41AAB697C00A66202 /* Products */,
@@ -79,6 +89,10 @@
 			children = (
 				839C99F81AAB697C00A66202 /* AppDelegate.swift */,
 				839C99FA1AAB697C00A66202 /* ViewController.swift */,
+				839C9A181AAB69BC00A66202 /* AViewController.swift */,
+				839C9A1A1AAB69C700A66202 /* BViewController.swift */,
+				839C9A1C1AAB69D300A66202 /* CViewController.swift */,
+				839C9A1E1AAB69E400A66202 /* DViewController.swift */,
 				839C99FC1AAB697C00A66202 /* Main.storyboard */,
 				839C99FF1AAB697C00A66202 /* Images.xcassets */,
 				839C9A011AAB697C00A66202 /* LaunchScreen.xib */,
@@ -213,6 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				839C99FB1AAB697C00A66202 /* ViewController.swift in Sources */,
+				839C9A1F1AAB69E400A66202 /* DViewController.swift in Sources */,
+				839C9A1B1AAB69C700A66202 /* BViewController.swift in Sources */,
+				839C9A1D1AAB69D300A66202 /* CViewController.swift in Sources */,
+				839C9A191AAB69BC00A66202 /* AViewController.swift in Sources */,
 				839C99F91AAB697C00A66202 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
