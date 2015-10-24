@@ -40,13 +40,13 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var page = (viewController as PageDelegate).pageNumber + 1
+        let page = (viewController as! PageDelegate).pageNumber + 1
         
         return viewControllerForPage(page)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var page = (viewController as PageDelegate).pageNumber - 1
+        let page = (viewController as! PageDelegate).pageNumber - 1
         
         return viewControllerForPage(page)
     }
@@ -56,10 +56,11 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
             if let controller = cache.objectForKey(page) as? UIViewController {
                 return controller
             }
-            let controller = storyboard?.instantiateViewControllerWithIdentifier(identifiers[page]) as? UIViewController
-            (controller as PageDelegate).pageNumber = page
-            cache.setObject(controller!, forKey: page)
-            return controller
+            if let controller = storyboard?.instantiateViewControllerWithIdentifier(identifiers[page]) {
+                (controller as? PageDelegate)?.pageNumber = page
+                cache.setObject(controller, forKey: page)
+                return controller
+            }
         }
         
         return nil
